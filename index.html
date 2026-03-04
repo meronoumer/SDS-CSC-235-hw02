@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Secret Life of Squirrels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🐿The Secret Life of Squirrels</h1>
+
+    <section>
+        <h2>About the Dataset</h2>
+        <p>
+            This data comes from 
+            <a href="https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw/about_data" target="_blank">
+                The Squirrel Census
+            </a>, a multimedia science project documenting
+            Eastern gray squirrels in Central Park.
+        </p>
+
+        <p>
+            The dataset contains 3,023 squirrel sightings including geographic
+            coordinates, age, fur color, elevation (ground vs above ground),
+            and time of observation (AM/PM shift).
+        </p>
+
+        <p>
+            <strong>Potential Biases:</strong> Data was collected only in Central Park,
+            during specific time shifts, and by human observers — meaning some
+            behaviors or squirrel types may be underreported.
+        </p>
+    </section>
+
+    <section>
+    <h2>Quantitative Variables</h2>
+    <button onclick="toggleStats()">Show / Hide Summary Statistics</button>
+
+    <div id="statsBox" style="display: none;">
+        <div class="stat-group">
+            <h3>Longitude (X)</h3>
+            <ul>
+                <li><strong>Mean:</strong> -73.967184</li>
+                <li><strong>Median:</strong> -73.9685</li>
+                <li><strong>Std Dev:</strong> 0.010285</li>
+            </ul>
+        </div>
+
+        <div class="stat-group">
+            <h3>Latitude (Y)</h3>
+            <ul>
+                <li><strong>Mean:</strong> 40.780853</li>
+                <li><strong>Median:</strong> 40.778</li>
+                <li><strong>Std Dev:</strong> 0.007726</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <section>
+        <h2>Quantitative Variables </h2>
+
+        <img src="images/longitude_distribution.png" class="plot">
+        <img src="images/latitude_distribution.png" class="plot">
+    </section>
+
+    <section>
+        <h2>Categorical & Ordinal Distributions</h2>
+
+        <img src="images/fur_distribution.png" class="plot">
+        <img src="images/shift_distribution.png" class="plot">
+        <img src="images/age_distribution.png" class="plot">
+        <img src="images/location_distribution.png" class="plot">
+
+    </section>
+
+    <section>
+        <h2>Relationships Between Variables</h2>
+
+        <img src="images/age_location.png" class="plot">
+        <img src="images/Color_Age.png" class="plot">
+        <img src="images/Squirrel_sightings.png" class="plot">
+
+    </section>
+
+    <section>
+        <h2>Testable Hypotheses</h2>
+
+        <ol>
+            <li>Adult squirrels are more likely to be observed above ground than juveniles.</li>
+            <li>Gray squirrels make up more than 60% of sightings.</li>
+            <li>Squirrels observed in the PM shift are more likely to be on the ground.</li>
+        </ol>
+    </section>
+
+<script src="index.js"></script>
+</body>
+</html>
